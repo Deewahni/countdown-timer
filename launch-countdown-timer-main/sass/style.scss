@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 14px;
+    color: hsl(237, 18%, 59%);
+    font-weight: 700;
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    letter-spacing: 5px;
+}
+
+
+
+.announcement {
+    font-size: 2rem;
+    color: white;
+    letter-spacing: 5px;
+    transform: translateY(100px);
+}
+main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(hsl(234, 17%, 12%), #2F2439);
+    z-index: -5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+    
+    .stars {
+        position: absolute;
+        z-index: -1;
+       
+    }
+    .hills{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .wrapper{
+        display: flex;
+    }
+
+    .card {
+        min-width: 150px;
+        height: 150px;
+        margin: 20px;
+        text-align: center;
+
+        .container {
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(hsl(235, 16%, 14%), hsl(236, 21%, 26%));
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .socmed {
+        font-size: 2rem;
+
+      a {
+          padding: 20px;
+          color: hsl(237, 18%, 59%);
+      }
+    }
+}

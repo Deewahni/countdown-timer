@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  font-family: 'Red Hat Text', sans-serif;
+  font-size: 14px;
+  color: #8486a9;
+  font-weight: 700;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  letter-spacing: 5px;
+}
+
+.announcement {
+  font-size: 2rem;
+  color: white;
+  letter-spacing: 5px;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+}
+
+main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#191a24), to(#2F2439));
+  background-image: linear-gradient(#191a24, #2F2439);
+  z-index: -5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px 0;
+}
+
+main .stars {
+  position: absolute;
+  z-index: -1;
+}
+
+main .hills {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+main .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .card {
+  min-width: 150px;
+  height: 150px;
+  margin: 20px;
+  text-align: center;
+}
+
+main .card .container {
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1e1f29), to(#343650));
+  background-image: linear-gradient(#1e1f29, #343650);
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+main .socmed {
+  font-size: 2rem;
+}
+
+main .socmed a {
+  padding: 20px;
+  color: #8486a9;
+}
+/*# sourceMappingURL=style.css.map */
