@@ -9,7 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="sass/style.css">
-  <title>Frontend Mentor | Launch countdown timer</title>
+  <title>Launch countdown timer</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -26,22 +26,22 @@
     <h1 class="announcement">WE'RE LAUNCHING SOON</h1>
    <div class="wrapper">
       <div class="card">
-        <div class="day container"></div>
+        <div class="container"><h2 id="day">00</h2></div>
         <p>DAYS</p>
       </div>
      
       <div class="card">
-        <div class="hour container"></div>
+        <div class="container"><h2 id="hour">00</h2></div>
         <p>HOURS</p>
       </div>
      
       <div class="card">
-        <div class="minute container"></div>
+        <div class="container"><h2 id="min">00</h2></div>
         <p>MINUTES</p>
       </div>
      
       <div class="card">
-        <div class="sec container"></div>
+        <div class="container"><h2 id="sec">00</h2></div>
         <p>SECONDS</p>
       </div>
    </div>
@@ -51,6 +51,8 @@
       <a href="#"><i class="fab fa-pinterest"></i></a>
       <a href="#"><i class="fab fa-instagram"></i></a>
     </div>
+
+
     <div class="hills"><img src="images/pattern-hills.svg" alt=""></div>
   </main>
   
@@ -60,5 +62,9 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script src="app.js"></script>
 </body>
 </html>
+
+

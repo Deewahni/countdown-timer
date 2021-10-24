@@ -10,6 +10,7 @@ body{
     font-size: 14px;
     color: hsl(237, 18%, 59%);
     font-weight: 700;
+    z-index: 0;
 }
 
 img {
@@ -39,6 +40,7 @@ main {
     align-items: center;
     justify-content: space-between;
     padding: 50px 0;
+    z-index: 100;
     
     .stars {
         position: absolute;
@@ -63,20 +65,33 @@ main {
         text-align: center;
 
         .container {
-            width: 100%;
+            width: calc(100% - 10px);
             height: 100%;
-            background-image: linear-gradient(hsl(235, 16%, 14%), hsl(236, 21%, 26%));
+            background-image: linear-gradient(#2c2c44, #34364f);
             border-radius: 8px;
             margin-bottom: 10px;
+            display: grid;
+            place-items: center;
+
+            h2 {
+                font-size: 5rem;
+                font-weight: 900;
+                color: hsl(345, 95%, 68%);
+            }
         }
     }
 
     .socmed {
         font-size: 2rem;
-
-      a {
-          padding: 20px;
-          color: hsl(237, 18%, 59%);
-      }
+       
+        a{
+           margin: 20px;
+           color: hsl(237, 18%, 59%);
+           transition: .3s ease-in;
+        }
+        a:hover {
+            color: hsl(345, 95%, 68%);
+        }
+    
     }
 }
