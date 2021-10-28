@@ -28,6 +28,7 @@ p {
   letter-spacing: 5px;
   -webkit-transform: translateY(100px);
           transform: translateY(100px);
+  text-align: center;
 }
 
 main {
@@ -73,7 +74,7 @@ main .wrapper {
 }
 
 main .card {
-  min-width: 150px;
+  width: 150px;
   height: 150px;
   margin: 20px;
   text-align: center;
@@ -110,5 +111,20 @@ main .socmed a {
 
 main .socmed a:hover {
   color: #fb6087;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 80px !important;
+    height: 80px !important;
+    margin: 5px !important;
+  }
+  .card h2 {
+    font-size: 3rem !important;
+  }
+  p {
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
