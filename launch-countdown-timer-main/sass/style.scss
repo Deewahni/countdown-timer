@@ -11,7 +11,6 @@ body{
     color: hsl(237, 18%, 59%);
     font-weight: 700;
     z-index: 0;
-}
 
 img {
     width: 100%;
@@ -20,8 +19,6 @@ img {
 p {
     letter-spacing: 5px;
 }
-
-
 
 .announcement {
     font-size: 2rem;
@@ -42,11 +39,15 @@ main {
     justify-content: space-between;
     padding: 50px 0;
     z-index: 100;
-    
+
+    img{
+        display: block;
+        height: 100px;
+    }
     .stars {
         position: absolute;
         z-index: -1;
-       
+
     }
     .hills{
         position: absolute;
@@ -71,8 +72,11 @@ main {
             background-image: linear-gradient(#2c2c44, #34364f);
             border-radius: 8px;
             margin-bottom: 10px;
-            display: grid;
-            place-items: center;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
 
             h2 {
                 font-size: 5rem;
@@ -84,7 +88,7 @@ main {
 
     .socmed {
         font-size: 2rem;
-       
+
         a{
            margin: 20px;
            color: hsl(237, 18%, 59%);
@@ -93,24 +97,35 @@ main {
         a:hover {
             color: hsl(345, 95%, 68%);
         }
-    
+
     }
 }
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
 
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+}
 @media screen and (max-width: 768px) {
-    .card {
-        width: 80px !important;
-        height: 80px !important;
-        margin: 5px !important;
+    .wrapper {
+        .card {
+        width: 80px;
+        height: 80px;
+        margin: 5px;
 
-        h2{
-            font-size: 3rem !important;
+      .container  h2{
+            font-size: 3em ;
         }
 
     }
 
     p {
-        font-size: 0.7rem;
+        font-size: 0.7em;
         letter-spacing: 3px;
+        }
     }
 }
+
