@@ -98,13 +98,14 @@ main {
 }
 
 @media screen and (max-width: 768px) {
-    .card {
-        width: 80px !important;
-        height: 80px !important;
-        margin: 5px !important;
+    body {
+        .card {
+        width: 80px;
+        height: 80px;
+        margin: 5px;
 
         h2{
-            font-size: 3rem !important;
+            font-size: 3rem ;
         }
 
     }
@@ -112,5 +113,5 @@ main {
     p {
         font-size: 0.7rem;
         letter-spacing: 3px;
-    }
+        }}
 }
