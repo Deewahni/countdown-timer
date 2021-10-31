@@ -114,17 +114,19 @@ main .socmed a:hover {
 }
 
 @media screen and (max-width: 768px) {
-  .card {
-    width: 80px !important;
-    height: 80px !important;
-    margin: 5px !important;
+  body {
+    .card {
+    width: 80px ;
+    height: 80px ;
+    margin: 5px ;
   }
   .card h2 {
-    font-size: 3rem !important;
+    font-size: 3rem ;
   }
   p {
     font-size: 0.7rem;
     letter-spacing: 3px;
   }
+}
 }
 /*# sourceMappingURL=style.css.map */
